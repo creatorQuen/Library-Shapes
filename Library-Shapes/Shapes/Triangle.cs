@@ -38,6 +38,12 @@ namespace Library_Shapes.Shapes
             return Math.Pow(result, 0.5);
         }
 
+        public bool IsRightTriangle()
+        {
+            double maxSide = Math.Max(Math.Max(_sideA, _sideB), _sideC);
 
+            return Math.Pow(maxSide, 2) == (maxSide == _sideA ? (Math.Pow(_sideB, 2) + Math.Pow(_sideC, 2)) :
+                                            maxSide == _sideB ? (Math.Pow(_sideA, 2) + Math.Pow(_sideC, 2)) : (Math.Pow(_sideA, 2) + Math.Pow(_sideB, 2)));
+        }
     }
 }

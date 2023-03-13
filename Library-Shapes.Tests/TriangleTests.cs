@@ -36,5 +36,18 @@ namespace Library_Shapes.Tests
         {
             Assert.Throws<ArgumentException>(() => new Triangle(sideA, sideB, sideC));
         }
+
+
+        [TestCase(3, 4, 5, true)]
+        [TestCase(5, 12, 13, true)]
+        [TestCase(39, 80, 89, true)]
+        [TestCase(1, 1, 1, false)]
+        public void IsRightTriangleTests(double sideA, double sideB, double sideC, bool expected)
+        {
+            var triangle = new Triangle(sideA, sideB, sideC);
+            var actual = triangle.IsRightTriangle();
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

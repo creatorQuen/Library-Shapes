@@ -22,5 +22,11 @@ namespace Library_Shapes
             var triangle = new Triangle(sideA, sideB, sideC);
             return CalculateShapeArea(triangle);
         }
+
+        public bool IsRightTriangle(double sideA, double sideB, double sideC)
+        {
+            var triangle = new Triangle(sideA, sideB, sideC);
+            return triangle.IsRightTriangle();
+        }
     }
 }
