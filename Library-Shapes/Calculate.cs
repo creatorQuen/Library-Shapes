@@ -11,15 +11,16 @@ namespace Library_Shapes
             return calculator.CalculateArea();
         }
 
-        /// <summary>
-        /// Calculate the area of a circle.
-        /// </summary>
-        /// <param name="radius"></param>
-        /// <returns>The area of a circle.</returns>
         public double GetAreaCircle(double radius)
         {
             var circle = new Circle(radius);
             return CalculateShapeArea(circle);
+        }
+
+        public double GetAreaTriangle(double sideA, double sideB, double sideC)
+        {
+            var triangle = new Triangle(sideA, sideB, sideC);
+            return CalculateShapeArea(triangle);
         }
     }
 }
