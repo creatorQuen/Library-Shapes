@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33214.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library-Shapes", "Library-Shapes\Library-Shapes.csproj", "{B650A658-209D-4652-99E4-BD316E860CC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library-Shapes", "Library-Shapes\Library-Shapes.csproj", "{B650A658-209D-4652-99E4-BD316E860CC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library-Shapes.Tests", "Library-Shapes.Tests\Library-Shapes.Tests.csproj", "{91092A8D-4E2B-4B46-91C0-A1CE2A2036DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B650A658-209D-4652-99E4-BD316E860CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B650A658-209D-4652-99E4-BD316E860CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B650A658-209D-4652-99E4-BD316E860CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91092A8D-4E2B-4B46-91C0-A1CE2A2036DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91092A8D-4E2B-4B46-91C0-A1CE2A2036DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91092A8D-4E2B-4B46-91C0-A1CE2A2036DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91092A8D-4E2B-4B46-91C0-A1CE2A2036DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
